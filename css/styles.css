@@ -2845,11 +2845,11 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #1D809F;
-  --bs-btn-border-color: #1D809F;
+  --bs-btn-bg: #102a70;
+  --bs-btn-border-color: #3159c5;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #196d87;
-  --bs-btn-hover-border-color: #17667f;
+  --bs-btn-hover-bg: #2b4076;
+  --bs-btn-hover-border-color: #102a70;
   --bs-btn-focus-shadow-rgb: 63, 147, 173;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #17667f;
@@ -8126,7 +8126,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #172f70 !important;
 }
 
 .bg-secondary {
@@ -10877,7 +10877,7 @@ html {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
+  background: #102a70;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -10942,7 +10942,7 @@ html {
   height: 50px;
   text-align: center;
   color: #fff;
-  background: rgba(52, 58, 64, 0.5);
+  background: #102a70;
   line-height: 50px;
   z-index: 999;
 }
@@ -10982,7 +10982,7 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #1D809F;
+  background-color:#172f70;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
@@ -11100,7 +11100,7 @@ footer.footer .social-link:hover {
 
 .service-icon {
   background-color: #fff;
-  color: #1D809F;
+  color: #172f70;
   height: 7rem;
   width: 7rem;
   display: block;
