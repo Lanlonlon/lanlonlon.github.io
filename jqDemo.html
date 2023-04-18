@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .myli {
+            color: #6e6fff;
+        }
+
+        .myli2 {
+            color: #5e0d0d;
+        }
+    </style>
+</head>
+<body>
+
+<ul id="t1">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+</ul>
+
+<ul id="t2">
+    <li class="myli">A</li>
+    <li class="myli">B</li>
+    <li class="myli">C</li>
+</ul>
+
+<ul id="t3">
+    <button id="btn1-1">1-1</button>
+</ul>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+        console.log("miiiiiiiiiiiii");
+        $("#t1 > li").addClass("myli");
+        $("#t2 > li").removeClass("myli")
+            .addClass("myli2");
+
+        $("#t1").empty();
+        for (var i = 0; i < 10; i++) {
+            var cls = 'myli';
+            if (i % 2 == 0) {
+                cls = 'myli2';
+            }
+            $("#t1").append("<li class=" + cls + ">" + i + "</li>");
+        }
+
+        //btnOnClick();
+        $("#btn1-1").bind("click", btnOnClick);
+        $("#btn1-1").hover(btnOnHoverIn, btnOnHoverOut);
+
+
+        $("#t3").empty();
+        for (var i = 0; i < 7; i++) {
+            for (var j = 0; j < 4; j++) {
+                $("#t3").append("<button>" + (i + 1) + "-" + (j + 1) + "</button>");
+            }
+            $("#t3").append("<br/>");
+        }
+    });
+
+    function btnOnClick() {
+        console.log("不要碰我!");
+    }
+
+    function btnOnHoverIn() {
+        console.log("你想做啥!");
+    }
+
+    function btnOnHoverOut() {
+        console.log("你就別回來了!");
+    }
+
+</script>
+
+
+</body>
+</html>
