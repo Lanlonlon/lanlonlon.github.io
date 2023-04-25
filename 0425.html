@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0425</title>
+</head>
+<body>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+<script>
+
+    $(function () {
+        console.log("hi!");
+
+        CallAPI("在你深深的腦海裡");
+    });
+
+    function CallAPI(addr) {
+        console.log("call...");
+
+        var url = "http://zip5.5432.tw/zip5json.py?adrs=" + addr;
+        console.log(url); //for debug
+        $.ajax({
+            url: url,
+            dataType: "json",
+            type: "get",
+            //data:data,
+            //Type: Function(Anything data, String textStatus, jqXHR jqXHR)
+            success: function (data, textStatus, jqXHR) {
+                console.log(JSON.stringify(data));
+                console.log(data.zipcode6);
+            },
+            //Type: Function(jqXHR jqXHR, String textStatus, String errorThrown)
+            error: function (jqXHR, textStatus, errorThrown) {
+
+            }
+        });
+
+        console.log("call... END");
+    }
+
+
+</script>
+
+
+</body>
+</html>
